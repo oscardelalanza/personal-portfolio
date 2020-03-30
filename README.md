@@ -21,7 +21,6 @@ Technologies
 [![Yarn](https://img.shields.io/badge/-Yarn-%232188b6)](https://yarnpkg.com/)
 [![Heroku](https://img.shields.io/badge/-Heroku-%2379589F)](https://www.heroku.com/)
 [![Devise](https://img.shields.io/badge/-Devise-%231D3461)](https://github.com/heartcombo/devise)
-[![Dotenv](https://img.shields.io/badge/dotenv-2.7.5-%23B2945B)](https://github.com/bkeepers/dotenv)
 
 ## ERD
 ![ERD](docs/erd.png)
