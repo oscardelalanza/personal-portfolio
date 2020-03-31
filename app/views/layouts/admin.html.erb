@@ -10,22 +10,7 @@
 </head>
 
 <body class="admin d-md-flex flex-md-wrap">
-<aside class="dashboard-aside sticky-top">
-<div>
-  <%= image_tag('icons/user.png') %>
-</div>
-<div>
-  <ul>
-    <li><%= link_to('link to somewhere') %></li>
-    <li><%= link_to('link to somewhere') %></li>
-    <li><%= link_to('link to somewhere') %></li>
-    <li><%= link_to('link to somewhere') %></li>
-    <li><%= link_to('link to somewhere') %></li>
-  </ul>
-</div>
-</aside>
-
-  <div class="dashboard-main">
+  <div class="dashboard-main order-md-1">
     <header>
       <nav>
         <%= link_to('logout', destroy_user_session_path, method: :delete) %>
@@ -40,5 +25,21 @@
       <p>Dashboard by Oscar De La Lanza</p>
     </footer>
   </div>
+
+  <aside class="dashboard-aside sticky-top order-md-0 shadow p-md-3">
+    <div class="img-thumbnail rounded-circle profile-img mb-md-4">
+      <%= image_tag('icons/user.png') %>
+    </div>
+
+    <div class="dropdown-divider mt-md-3 mb-md-4"></div>
+
+    <div class="list-group">
+      <%= link_to('link to somewhere', '#', class: "list-group-item list-group-item-action bg-transparent text-light") %>
+      <%= link_to('link to somewhere', '#', class: "list-group-item list-group-item-action bg-transparent text-light") %>
+      <%= link_to('link to somewhere', '#', class: "list-group-item list-group-item-action bg-transparent text-light") %>
+      <%= link_to('link to somewhere', '#', class: "list-group-item list-group-item-action bg-transparent text-light") %>
+      <%= link_to('link to somewhere', '#', class: "list-group-item list-group-item-action bg-transparent text-light") %>
+    </div>
+  </aside>
 </body>
 </html>

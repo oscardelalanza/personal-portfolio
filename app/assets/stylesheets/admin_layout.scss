@@ -25,15 +25,16 @@
   }
 
   .dashboard-aside {
-    background: darkgoldenrod;
+    background-image: linear-gradient( 102.2deg,  rgba(250,45,66,1) 9.6%, rgba(245,104,104,1) 96.1% );
     width: 20%;
     max-width: 290px;
     height: 100vh;
-    border: 0;
-    margin: 0;
 
-    img {
-      width: 100%;
+    .profile-img {
+      margin: 20px 60px;
+      img {
+        width: 100%;
+      }
     }
   }
 }
