@@ -8,34 +8,37 @@
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
-<body>
-  <header>
-    <nav>
-      <%= link_to('logout', destroy_user_session_path, method: :delete) %>
-    </nav>
-  </header>
 
-  <aside>
-    <div>
-      <%= image_tag('icons/user.png') %>
-    </div>
-    <div>
-      <ul>
-        <li><%= link_to('link to somewhere') %></li>
-        <li><%= link_to('link to somewhere') %></li>
-        <li><%= link_to('link to somewhere') %></li>
-        <li><%= link_to('link to somewhere') %></li>
-        <li><%= link_to('link to somewhere') %></li>
-      </ul>
-    </div>
-  </aside>
+<body class="admin d-md-flex flex-md-wrap">
+<aside class="dashboard-aside sticky-top">
+<div>
+  <%= image_tag('icons/user.png') %>
+</div>
+<div>
+  <ul>
+    <li><%= link_to('link to somewhere') %></li>
+    <li><%= link_to('link to somewhere') %></li>
+    <li><%= link_to('link to somewhere') %></li>
+    <li><%= link_to('link to somewhere') %></li>
+    <li><%= link_to('link to somewhere') %></li>
+  </ul>
+</div>
+</aside>
 
-  <main>
-    <%= yield %>
-  </main>
+  <div class="dashboard-main">
+    <header>
+      <nav>
+        <%= link_to('logout', destroy_user_session_path, method: :delete) %>
+      </nav>
+    </header>
 
-  <footer>
-    <p>Dashboard by Oscar De La Lanza</p>
-  </footer>
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      <p>Dashboard by Oscar De La Lanza</p>
+    </footer>
+  </div>
 </body>
 </html>

@@ -1,0 +1,39 @@
+.admin {
+  background: #100b20;
+  color: #fff;
+
+  .dashboard-main {
+    width: 80%;
+
+    header {
+      background: #fff;
+      width: 100%;
+      height: 50px;
+    }
+
+    main {
+      background: darkgreen;
+      width: 100%;
+      height: 1500px;
+    }
+
+    footer {
+      background: aquamarine;
+      width: 100%;
+      height: 150px;
+    }
+  }
+
+  .dashboard-aside {
+    background: darkgoldenrod;
+    width: 20%;
+    max-width: 290px;
+    height: 100vh;
+    border: 0;
+    margin: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+}
