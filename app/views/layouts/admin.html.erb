@@ -12,8 +12,8 @@
 <body class="admin d-md-flex flex-md-wrap">
   <div class="dashboard-main order-md-1">
     <header>
-      <nav>
-        <%= link_to('logout', destroy_user_session_path, method: :delete) %>
+      <nav class="d-md-flex align-items-md-center justify-content-md-end">
+        <%= link_to('logout', destroy_user_session_path, method: :delete, class: 'btn btn-outline-danger mr-md-3') %>
       </nav>
     </header>
 
@@ -34,11 +34,11 @@
     <div class="dropdown-divider mt-md-3 mb-md-4"></div>
 
     <div class="list-group">
-      <%= link_to('link to somewhere', '#', class: "list-group-item list-group-item-action bg-transparent text-light") %>
-      <%= link_to('link to somewhere', '#', class: "list-group-item list-group-item-action bg-transparent text-light") %>
-      <%= link_to('link to somewhere', '#', class: "list-group-item list-group-item-action bg-transparent text-light") %>
-      <%= link_to('link to somewhere', '#', class: "list-group-item list-group-item-action bg-transparent text-light") %>
-      <%= link_to('link to somewhere', '#', class: "list-group-item list-group-item-action bg-transparent text-light") %>
+      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
+      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
+      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
+      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
+      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
     </div>
   </aside>
 </body>
