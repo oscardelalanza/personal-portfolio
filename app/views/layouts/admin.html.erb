@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body class="admin d-md-flex flex-md-wrap">
+  <div class="dashboard-main order-md-1">
+    <header class="pr-md-2 pl-md-2">
+      <nav class="d-md-flex align-items-md-center justify-content-md-end col-md-12">
+        <%= link_to('End Session', destroy_user_session_path, method: :delete, class: 'btn btn-outline-danger') %>
+      </nav>
+    </header>
+
+    <main class="pl-md-4 pr-md-4 pt-md-3 pb-md-4">
+      <%= yield %>
+    </main>
+
+    <footer class="pl-md-4 pr-md-4 pt-md-3 pb-md-4 d-md-flex justify-content-between">
+      <p>Made with <i class="far fa-heart text-danger"></i> by Oscar De La Lanza</p>
+      <p>This project is <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPL v3</a> licensed.</p>
+    </footer>
+  </div>
+
+  <aside class="dashboard-aside sticky-top order-md-0 shadow p-md-3">
+    <div class="img-thumbnail rounded-circle profile-img mb-md-4">
+      <%= image_tag('icons/user.png') %>
+    </div>
+
+    <div class="dropdown-divider mt-md-3 mb-md-4"></div>
+
+    <div class="list-group">
+      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
+      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
+      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
+      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
+      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
+    </div>
+  </aside>
+</body>
+</html>
