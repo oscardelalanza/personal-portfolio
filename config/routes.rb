@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'home#index'
 
-  resources :dashboard
-  resources :personal_info, only: [:new, :create]
+  resources :dashboard, only: [:index]
+  resources :personal_info, only: [:show, :new, :create]
 end

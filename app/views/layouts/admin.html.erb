@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Document</title>
+  <title>Portfolio Dashboard</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
@@ -33,6 +33,18 @@
     </div>
 
     <div class="dropdown-divider mt-md-3 mb-md-4"></div>
+
+    <div class="links">
+      <div class="home mb-md-4">
+        <p class="text-warning mb-md-2">Home</p>
+        <%= link_to(raw('<i class="fas fa-columns"></i> Dashboard'), dashboard_index_path, class: "text-light") %>
+      </div>
+
+      <div class="profile mb-md-4">
+        <p class="text-warning mb-md-2">Profile</p>
+        <%= link_to(raw('<i class="fas fa-user"></i> Personal Info'), personal_info_path(current_user), class: "text-light") %>
+      </div>
+    </div>
 
     <div class="list-group">
       <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
