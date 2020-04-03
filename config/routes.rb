@@ -3,5 +3,7 @@ Rails.application.routes.draw do
              path_names: { sign_in: 'login', sign_out: 'logout', password: 'secret', confirmation: 'verification', unlock: 'unblock', registration: 'register', sign_up: 'just_for_the_owner' }
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'home#index'
+
   resources :dashboard
+  resources :personal_info, only: [:new, :create]
 end
