@@ -8,10 +8,11 @@ class PersonalInfoController < ApplicationController
   end
 
   def create
-    @personal_info = current_user.personal_info.build(personal_info_params)
-    @personal_info.save
+    @personal_info = current_user.build_personal_info(personal_info_params)
 
-    redirect_to personal_info_path(current_user)
+    if @personal_info.save
+      redirect_to personal_info_path(current_user)
+    end
   end
 
   private

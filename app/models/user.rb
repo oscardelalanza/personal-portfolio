@@ -7,4 +7,8 @@ class User < ApplicationRecord
   validates :last_name, presence: true
 
   has_one :personal_info
+
+  def registered_info?
+    true if PersonalInfo.find_by(user_id: id)
+  end
 end

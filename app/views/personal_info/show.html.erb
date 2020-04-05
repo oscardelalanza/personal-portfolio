@@ -7,10 +7,10 @@
     </div>
 
     <div class="col-md-2 d-md-flex justify-content-md-end">
-      <% if current_user.personal_info.nil? %>
-        <%= link_to(raw('<i class="fas fa-plus"></i> Add'), new_personal_info_path, class: 'btn btn-outline-success mt-md-auto mb-md-auto') %>
-      <% else %>
+      <% if current_user.registered_info? %>
         <%= link_to(raw('<i class="fas fa-plus"></i> Edit'), new_personal_info_path, class: 'btn btn-outline-primary mt-md-auto mb-md-auto') %>
+      <% else %>
+        <%= link_to(raw('<i class="fas fa-plus"></i> Add'), new_personal_info_path, class: 'btn btn-outline-success mt-md-auto mb-md-auto') %>
       <% end %>
     </div>
   </div>
