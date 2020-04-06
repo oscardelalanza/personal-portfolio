@@ -1,0 +1,50 @@
+<div class="personal-info">
+
+  <!-- Header row -->
+  <div class="row mb-md-4">
+    <div class="col-md-10">
+      <h1>Personal Information</h1>
+    </div>
+
+    <div class="col-md-2 d-md-flex justify-content-md-end">
+      <% if current_user.registered_info? %>
+        <%= link_to(raw('<i class="fas fa-plus"></i> Edit'), new_personal_info_path, class: 'btn btn-outline-primary mt-md-auto mb-md-auto') %>
+      <% else %>
+        <%= link_to(raw('<i class="fas fa-plus"></i> Add'), new_personal_info_path, class: 'btn btn-outline-success mt-md-auto mb-md-auto') %>
+      <% end %>
+    </div>
+  </div>
+
+  <!-- Personal Info -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="personal bg-pineapple shadow rounded d-md-flex flex-md-wrap p-md-3">
+        <div class="col-md-3 pt-md-3">
+          <div class="mb-md-3">
+            <%= image_tag('icons/user.png', class: 'img-thumbnail rounded-circle') %>
+          </div>
+          <h5 class="text-center font-weight-bold">Profile Image</h5>
+        </div>
+
+        <ul class="list-group list-group-flush col-md-9 pt-md-3">
+          <li class="list-group-item bg-pineapple d-md-flex">
+            <h6 class="font-weight-bold col-md-3">Full Name:</h6>
+            <div class="col-md-9"><%= @personal_info.full_name %></div>
+          </li>
+          <li class="list-group-item bg-pineapple d-md-flex">
+            <h6 class="font-weight-bold col-md-3">Birth Date:</h6>
+            <div class="col-md-9"><%= @personal_info.birth_date %></div>
+          </li>
+          <li class="list-group-item bg-pineapple d-md-flex">
+            <h6 class="font-weight-bold col-md-3">Nationality:</h6>
+            <div class="col-md-9"><%= @personal_info.nationality %></div>
+          </li>
+          <li class="list-group-item bg-pineapple d-md-flex">
+            <h6 class="font-weight-bold col-md-3">Description:</h6>
+            <div class="col-md-9"><%= @personal_info.description %></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
