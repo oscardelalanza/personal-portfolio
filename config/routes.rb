@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   resources :dashboard, only: [:index]
   resources :personal_info, only: [:show, :new, :create]
+  resources :contact_info, only: [:index, :create, :destroy]
 end
