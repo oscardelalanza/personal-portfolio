@@ -1,5 +1,6 @@
 class PersonalInfoController < ApplicationController
   layout 'admin'
+  before_action :authenticate_user!
 
   def show
     @personal_info = PersonalInfo.find_by(user_id: params[:id])
