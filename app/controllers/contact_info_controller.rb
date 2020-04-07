@@ -3,7 +3,7 @@ class ContactInfoController < ApplicationController
   before_action :authenticate_user!
 
   def show
-    @info = ContactInfo.find_by(user_id: params[:id])
+    @records = ContactInfo.where(user_id: params[:id])
     @contact_info = ContactInfo.new
   end
 
