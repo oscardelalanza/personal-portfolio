@@ -1,5 +1,5 @@
 class ContactInfo < ApplicationRecord
-  self.table = 'contact_infos'
+  self.table_name = 'contact_infos'
 
   belongs_to :user
 end
