@@ -37,12 +37,13 @@
     <div class="links">
       <div class="home mb-md-4">
         <p class="text-warning mb-md-2">Home</p>
-        <%= link_to(raw('<i class="fas fa-columns"></i> Dashboard'), dashboard_index_path, class: "text-light") %>
+        <%= link_to(raw('<i class="fas fa-columns"></i> Dashboard'), dashboard_index_path, class: 'text-light') %>
       </div>
 
       <div class="profile mb-md-4">
         <p class="text-warning mb-md-2">Profile</p>
-        <%= link_to(raw('<i class="fas fa-user"></i> Personal Info'), personal_info_path(current_user), class: "text-light") %>
+        <%= link_to(raw('<i class="fas fa-user"></i> Personal Info'), personal_info_path(current_user), class: 'text-light d-md-block mb-md-3') %>
+        <%= link_to(raw('<i class="fas fa-globe-americas"></i> Contact Info'), contact_info_path(current_user), class: 'text-light d-md-block mb-md-3') %>
       </div>
     </div>
 
