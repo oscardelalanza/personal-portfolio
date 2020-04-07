@@ -5,4 +5,11 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   validates :name, presence: true
   validates :last_name, presence: true
+
+  has_one :personal_info
+  has_many :contact_info
+
+  def registered_info?
+    true if PersonalInfo.find_by(user_id: id)
+  end
 end

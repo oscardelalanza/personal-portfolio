@@ -1,0 +1,49 @@
+<div class="contact-info">
+  <!-- header row -->
+  <div class="row mb-md-4">
+    <div class="col-md-12">
+      <h1>Contact Information</h1>
+    </div>
+  </div>
+
+  <!-- contact information -->
+  <div class="row">
+    <div class="col-md-12">
+      <%= form_with model: @contact_info, url: contact_info_index_path, class: 'bg-pineapple form-inline col-md-12 p-md-4' do |form| %>
+        <div class="input-group col-md-3 pl-md-0">
+          <%= form.text_field :icon, class: 'form-control bg-transparent text-light', placeholder: 'Insert icon' %>
+        </div>
+
+        <div class="input-group col-md-3 pl-md-0">
+          <%= form.text_field :title, class: 'form-control bg-transparent text-light', placeholder: 'Username' %>
+        </div>
+
+        <div class="input-group col-md-5 pl-md-0">
+          <%= form.text_field :url, class: 'form-control bg-transparent text-light', placeholder: 'Url' %>
+        </div>
+
+        <div class="input-group col-md-1 pl-md-0 pr-md-0">
+          <%= form.submit 'Add', class: 'btn btn-warning btn-block' %>
+        </div>
+      <% end %>
+    </div>
+
+    <!-- list of contact information -->
+    <div class="col-md-12">
+      <div class="col-md-12 bg-pineapple p-md-4">
+        <table class="table table-dark bg-transparent">
+          <thead>
+            <tr>
+              <th>Icon</th>
+              <th>Username</th>
+              <th>URL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <%= render partial: 'contacts' %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
