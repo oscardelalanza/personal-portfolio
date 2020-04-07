@@ -30,7 +30,20 @@
 
     <!-- list of contact information -->
     <div class="col-md-12">
-      <%= render partial: 'contacts', collection: @records %>
+      <div class="col-md-12 bg-pineapple p-md-4">
+        <table class="table table-dark bg-transparent">
+          <thead>
+            <tr>
+              <th>Icon</th>
+              <th>Username</th>
+              <th>URL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <%= render partial: 'contacts' %>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>

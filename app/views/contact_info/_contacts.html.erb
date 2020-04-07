@@ -1,5 +1,13 @@
 <% @records.each do |contact| %>
-  <%= contact.icon %>
-  <%= contact.title %>
-  <%= contact.url %>
+  <tr>
+    <td>
+      <%= raw(contact.icon) %>
+    </td>
+    <td>
+      <%= contact.title %>
+    </td>
+    <td>
+      <%= link_to(contact.url, contact.url, class: 'text-light') %>
+    </td>
+  </tr>
 <% end %>
