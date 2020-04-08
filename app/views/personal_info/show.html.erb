@@ -21,10 +21,14 @@
       <div class="personal bg-pineapple shadow rounded d-md-flex flex-md-wrap p-md-3">
         <div class="col-md-3 pt-md-3">
           <div class="mb-md-3">
-            <% if @personal_info.user.profile_img.attached? %>
-              <%= image_tag(@personal_info.user.profile_img, class: 'img-thumbnail rounded-circle') %>
-            <% else %>
+            <% if @personal_info.user.nil? %>
               <%= image_tag('icons/user.png', class: 'img-thumbnail rounded-circle') %>
+            <% else %>
+              <% if @personal_info.user.profile_img.attached? %>
+                <%= image_tag(@personal_info.user.profile_img, class: 'img-thumbnail rounded-circle') %>
+              <% else %>
+                <%= image_tag('icons/user.png', class: 'img-thumbnail rounded-circle') %>
+              <% end %>
             <% end %>
           </div>
           <h5 class="text-center font-weight-bold">Profile Image</h5>

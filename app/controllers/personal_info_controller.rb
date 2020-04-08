@@ -13,7 +13,7 @@ class PersonalInfoController < ApplicationController
   end
 
   def create
-    @personal_info = current_user.build_personal_info(personal_info_params)
+    @personal_info = current_user.build_personal_info(personal_info_params.except(:profile_img))
 
     if @personal_info.save
       current_user.profile_img.attach(personal_info_params[:profile_img])
