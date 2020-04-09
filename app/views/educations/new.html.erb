@@ -1,0 +1,56 @@
+<div class="education">
+
+  <!-- header row -->
+  <div class="row mb-md-4">
+    <div class="col-md-10">
+      <h1>Educational Information</h1>
+    </div>
+
+    <div class="col-md-2 d-md-flex justify-content-md-end">
+      <%= link_to(raw('<i class="fas fa-window-close"></i> Cancel'), education_path(current_user), class: 'btn btn-outline-danger mt-md-auto mb-md-auto') %>
+    </div>
+  </div>
+
+  <!-- form row -->
+  <div class="row">
+    <div class="col-md-12">
+      <%= form_with model: @education, class: 'bg-pineapple rounded shadow col-md-12 p-md-4' do |form| %>
+        <h2 class="mb-md-4">Here you can add new education information</h2>
+
+        <div class="form-group">
+          <%= form.label :title, 'Title:' %>
+          <%= form.text_field :title, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :school, 'School:' %>
+          <%= form.text_field :school, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :url, 'School site:' %>
+          <%= form.text_field :url, class: 'form-control' %>
+        </div>
+
+        <div class="d-md-flex">
+          <div class="form-group col-md-6 pl-md-0">
+            <%= form.label :start, 'Start date:' %>
+            <%= form.date_field :start, class: 'form-control' %>
+          </div>
+
+          <div class="form-group col-md-6 pr-md-0">
+            <%= form.label :end, 'End date:' %>
+            <%= form.date_field :end, class: 'form-control' %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :description, 'Description' %>
+          <%= form.text_area :description, class: 'form-control', rows: 5 %>
+        </div>
+
+        <%= form.submit 'Save', class: 'btn btn-success btn-block' %>
+      <% end %>
+    </div>
+  </div>
+</div>
