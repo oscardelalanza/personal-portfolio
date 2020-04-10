@@ -29,7 +29,11 @@
 
   <aside class="dashboard-aside sticky-top order-md-0 shadow p-md-3">
     <div class="img-thumbnail rounded-circle profile-img mb-md-4">
-      <%= image_tag('icons/user.png') %>
+      <% if current_user.profile_img.attached? %>
+        <%= image_tag(current_user.profile_img, class: 'rounded-circle') %>
+      <% else %>
+        <%= image_tag('icons/user.png') %>
+      <% end %>
     </div>
 
     <div class="dropdown-divider mt-md-3 mb-md-4"></div>
