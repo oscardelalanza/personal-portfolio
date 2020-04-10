@@ -29,7 +29,11 @@
 
   <aside class="dashboard-aside sticky-top order-md-0 shadow p-md-3">
     <div class="img-thumbnail rounded-circle profile-img mb-md-4">
-      <%= image_tag('icons/user.png') %>
+      <% if current_user.profile_img.attached? %>
+        <%= image_tag(current_user.profile_img, class: 'rounded-circle') %>
+      <% else %>
+        <%= image_tag('icons/user.png') %>
+      <% end %>
     </div>
 
     <div class="dropdown-divider mt-md-3 mb-md-4"></div>
@@ -44,15 +48,8 @@
         <p class="text-warning mb-md-2">Profile</p>
         <%= link_to(raw('<i class="fas fa-user"></i> Personal Info'), personal_info_path(current_user), class: 'text-light d-md-block mb-md-3') %>
         <%= link_to(raw('<i class="fas fa-globe-americas"></i> Contact Info'), contact_info_path(current_user), class: 'text-light d-md-block mb-md-3') %>
+        <%= link_to(raw('<i class="fas fa-graduation-cap"></i> Education'), education_path(current_user), class: 'text-light d-md-block mb-md-3') %>
       </div>
-    </div>
-
-    <div class="list-group">
-      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
-      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
-      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
-      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
-      <%= link_to('link to somewhere', '#', class: 'list-group-item list-group-item-action bg-transparent text-light') %>
     </div>
   </aside>
 </body>
