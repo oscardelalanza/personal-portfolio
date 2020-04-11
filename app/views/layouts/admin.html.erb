@@ -50,6 +50,11 @@
         <%= link_to(raw('<i class="fas fa-globe-americas"></i> Contact Info'), contact_info_path(current_user), class: 'text-light d-md-block mb-md-3') %>
         <%= link_to(raw('<i class="fas fa-graduation-cap"></i> Education'), education_path(current_user), class: 'text-light d-md-block mb-md-3') %>
       </div>
+
+      <div class="professional mb-md-4">
+        <p class="text-warning mb-md-2">Professional</p>
+        <%= link_to(raw('<i class="far fa-newspaper"></i> Articles'), article_path(current_user), class: 'text-light d-md-block mb-md-3') %>
+      </div>
     </div>
   </aside>
 </body>
