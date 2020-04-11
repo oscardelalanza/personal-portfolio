@@ -10,6 +10,7 @@ class User < ApplicationRecord
   has_many :contact_info
   has_one_attached :profile_img
   has_many :educations
+  has_many :articles
 
   def registered_info?
     true if PersonalInfo.find_by(user_id: id)
