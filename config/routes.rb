@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   resources :personal_info, only: [:show, :new, :create]
   resources :contact_info, only: [:show, :create, :destroy]
   resources :educations, only: [:show, :new, :create]
+  resources :articles, only: [:show, :create, :destroy]
 end
