@@ -4,6 +4,7 @@ class ArticlesController < ApplicationController
 
   def show
     @new_article = Article.new
+    @articles = articles_thumbnails
   end
 
   def create
@@ -15,5 +16,9 @@ class ArticlesController < ApplicationController
 
   def article_params
     params.require(:article).permit(:url)
+  end
+
+  def articles_thumbnails
+    Article.where(user_id: params[:id]).map { |article| LinkThumbnailer.generate(article.url) }
   end
 end
