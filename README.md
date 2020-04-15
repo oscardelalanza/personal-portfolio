@@ -21,7 +21,8 @@ Technologies
 [![Yarn](https://img.shields.io/badge/-Yarn-%232188b6)](https://yarnpkg.com/)
 [![Heroku](https://img.shields.io/badge/-Heroku-%2379589F)](https://www.heroku.com/)
 [![Devise](https://img.shields.io/badge/-Devise-%231D3461)](https://github.com/heartcombo/devise)
-
+[![AWS](https://img.shields.io/badge/AWS-S3-yellow)](https://aws.amazon.com/)
+[![LinkThumnailer](https://img.shields.io/badge/Link%20Thumbnailer-3.3.2-9cf)](https://github.com/gottfrois/link_thumbnailer)
 ## ERD
 ![ERD](docs/erd.png)
 
