@@ -1,0 +1,44 @@
+<div class="projects">
+  <!-- header row -->
+  <div class="row mb-md-4">
+    <div class="col-md-10">
+      <h1>New Project</h1>
+    </div>
+    <div class="col-md-2 d-md-flex justify-content-md-end">
+      <%= link_to(raw('<i class="fas fa-window-close"></i> Cancel'), projects_path, class: 'btn btn-outline-danger mt-md-auto mb-md-auto') %>
+    </div>
+  </div>
+
+  <!-- form row -->
+  <div class="row">
+    <div class="col-md-12">
+      <%= form_with model: @new_project, class: ' p-md-4 bg-pineapple shadow rounded' do |form| %>
+        <h2 class="mb-md-4">Here you can publish a new project</h2>
+
+        <div class="form-group">
+          <%= form.label :title, 'Title:' %>
+          <%= form.text_field :title, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :repository, 'Repository Url:' %>
+          <%= form.text_field :repository, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :demo, 'Demo Url:' %>
+          <%= form.text_field :demo, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :description, 'Description:' %>
+          <%= form.text_area :description, class: 'form-control', rows: 3 %>
+        </div>
+
+        <div class="form-group">
+          <%= form.text_area :content, class: 'tinymce'  %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
