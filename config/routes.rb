@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   resources :contact_info, only: [:show, :create, :destroy]
   resources :educations, only: [:show, :new, :create]
   resources :articles, only: [:show, :create, :destroy]
+  resources :projects
 end
