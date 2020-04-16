@@ -37,7 +37,9 @@
 
         <div class="form-group">
           <%= form.label :content, 'Content:' %>
-          <%= form.text_area :content %>
+          <div class="bg-light p-md-1">
+            <%= form.rich_text_area :content, class: 'bg-light' %>
+          </div>
         </div>
       <% end %>
     </div>
