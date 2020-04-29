@@ -2,7 +2,9 @@ class ProjectsController < ApplicationController
   layout 'admin'
   before_action :authenticate_user!
 
-  def index; end
+  def index
+    @projects = Project.where(user_id: current_user.id)
+  end
 
   def new
     @new_project = Project.new
@@ -16,6 +18,6 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:title, :repository, :demo, :description, :content)
+    params.require(:project).permit(:title, :repository, :demo, :description, :img_preview,:content)
   end
 end

@@ -36,6 +36,11 @@
         </div>
 
         <div class="form-group">
+          <%= form.label :img_preview, 'Preview Image:' %>
+          <%= form.file_field :img_preview, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
           <%= form.label :content, 'Content:' %>
           <div class="bg-light p-md-1 rich-container text-dark">
             <%= form.rich_text_area :content %>

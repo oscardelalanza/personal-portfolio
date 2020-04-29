@@ -112,6 +112,9 @@ GEM
     image_info (1.1.2)
       image_size
       typhoeus
+    image_processing (1.10.3)
+      mini_magick (>= 4.9.5, < 5)
+      ruby-vips (>= 2.0.17, < 3)
     image_size (2.0.2)
     iso8601 (0.9.1)
     jbuilder (2.10.0)
@@ -139,6 +142,7 @@ GEM
       mimemagic (~> 0.3.2)
     method_source (1.0.0)
     mimemagic (0.3.4)
+    mini_magick (4.10.1)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.14.0)
@@ -199,6 +203,8 @@ GEM
     ruby-ll (2.1.2)
       ansi
       ast
+    ruby-vips (2.0.17)
+      ffi (~> 1.9)
     ruby_dep (1.5.0)
     rubyzip (2.3.0)
     sass-rails (6.0.0)
@@ -271,6 +277,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   devise
   dotenv
+  image_processing (~> 1.2)
   jbuilder (~> 2.7)
   link_thumbnailer
   listen (>= 3.0.5, < 3.2)
