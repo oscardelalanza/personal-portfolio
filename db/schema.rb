@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_11_023949) do
+ActiveRecord::Schema.define(version: 2020_04_18_030611) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "action_text_rich_texts", force: :cascade do |t|
+    t.string "name", null: false
+    t.text "body"
+    t.string "record_type", null: false
+    t.bigint "record_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["record_type", "record_id", "name"], name: "index_action_text_rich_texts_uniqueness", unique: true
+  end
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -79,6 +89,17 @@ ActiveRecord::Schema.define(version: 2020_04_11_023949) do
     t.index ["user_id"], name: "index_personal_infos_on_user_id", unique: true
   end
 
+  create_table "projects", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "title", default: "", null: false
+    t.string "description", default: "", null: false
+    t.string "repository", default: "", null: false
+    t.string "demo", default: ""
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_projects_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name", default: "", null: false
     t.string "last_name", default: "", null: false
@@ -98,4 +119,5 @@ ActiveRecord::Schema.define(version: 2020_04_11_023949) do
   add_foreign_key "contact_infos", "users"
   add_foreign_key "educations", "users"
   add_foreign_key "personal_infos", "users"
+  add_foreign_key "projects", "users"
 end
