@@ -15,6 +15,10 @@ class ProjectsController < ApplicationController
     redirect_to projects_path if @project.save
   end
 
+  def show
+    @project = Project.find_by(id: params[:id])
+  end
+
   private
 
   def project_params
