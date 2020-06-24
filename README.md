@@ -69,6 +69,14 @@ To start the development server do the following
 
 no tests written yet
 
+### Future features
+
+- add editing and removing options to the sections `projects`, `articles`, `contact`, `education`
+- display pinned `projects` and `articles` in the corresponding section in the dashboard
+- add errors alerts/messages to the forms
+- add messages form
+- display dashboard info in homepage 
+
 ## Authors
 
 👤 **Oscar De La Lanza**
