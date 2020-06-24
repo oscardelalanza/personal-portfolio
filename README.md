@@ -30,6 +30,44 @@ Technologies
 
 [Live Demo Link](https://oscardelalanza.com)
 
+## Getting Started
+
+This project still on development
+
+> To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+- ruby
+- rails
+- git
+- postgreSQL
+- Yarn
+- AWS account
+
+### Setup
+
+To clone the project into your local environment do the following
+
+- open a new `terminal` window and navigate to the directory where the project will be stored
+- run the command `git clone git@github.com:oscardelalanza/personal-portfolio.git`
+run the command cd `personal-portfolio` to enter to the project directory
+
+### Install
+
+To install the requires packages do the following
+
+- inside `personal-portfolio` directory run the command `bundle install --without-production`
+- inside `personal-portfolio` directory run the command `yarn install`
+
+### Usage
+
+To start the development server do the following
+- inside `personal-portfolio` directory run the command `rails server`
+
+### Run tests
+
+no tests written yet
 
 ## Authors
 
@@ -52,12 +90,6 @@ Give a ⭐️ if you like this project!
 
 [![Paypal Donate](https://img.shields.io/badge/paypal-donate-blue)](https://paypal.me/oscardelalanza)
 
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
