@@ -65,20 +65,22 @@ To install the required packages do the following.
 
 ### Usage
 
-To start the development server do the following
-- inside `personal-portfolio` directory run the command `rails server`
-
 ### Run tests
 
 no tests written yet
 
+### Deployment
+
+To start the development server do the following.
+- Run the command `rails server`.
+
 ### Future features
 
-- add editing and removing options to the sections `projects`, `articles`, `contact`, `education`
-- display pinned `projects` and `articles` in the corresponding section in the dashboard
-- add errors alerts/messages to the forms
-- add messages form
-- display dashboard info in homepage 
+- Add editing and removing options to the sections `projects`, `articles`, `contact`, `education`.
+- Display pinned `projects` and `articles` in the corresponding section in the dashboard.
+- Add errors `alerts/messages` to the forms.
+- Add messages form.
+- Display dashboard info in homepage. 
 
 ## Authors
 
