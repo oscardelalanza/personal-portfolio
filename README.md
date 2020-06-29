@@ -32,7 +32,7 @@ Technologies
 
 ## Getting Started
 
-This project still on development
+# This project still on development
 
 > To get a local copy up and running follow these simple example steps.
 
