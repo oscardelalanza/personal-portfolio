@@ -3,7 +3,7 @@
 > Personal portfolio project is a web application intended for post and show my work, projects, articles and other
 > interesting stuff in one place. 
 
-![screenshot](docs/temporal-img.jpg)
+![screenshot](docs/screenshots/dashboard.png)
 
 ## Built With
 Languages
