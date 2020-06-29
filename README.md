@@ -65,6 +65,15 @@ To install the required packages do the following.
 
 ### Usage
 
+#### Dashboard *Only for the admin user*
+
+This section only contain `one` admin user. Get access to the dashboard following the path `/dashboard`.
+
+In the right side of the dashboard, you will find the navigation links that will redirect you to the different features of the project.
+![links](docs/screenshots/links.png)
+
+*More features of the dashboard still on development*
+
 ### Run tests
 
 - Run the command `rails tests`. 
