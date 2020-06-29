@@ -63,9 +63,10 @@ To install the required packages do the following.
 - Run the command `yarn install` to install the required node modules.
 - Run the command `rails db:migrate` to install de database.
 
-### Usage
+### Usage (Dashboard)
 
-#### Dashboard *Only for the admin user*
+#### Home
+##### Dashboard *Only for the admin user*
 
 This section only contain `one` admin user. Get access to the dashboard following the path `/dashboard`.
 
@@ -74,6 +75,37 @@ In the right side of the dashboard, you will find the navigation links that will
 ![links](docs/screenshots/links.png)
 
 *More features of the dashboard still on development*
+
+#### Profile
+##### Personal info *Only for the admin user*
+
+- Use this to update your personal information like `name`, `birth date`, `bio`.
+
+**Full features on development**
+
+##### Contact info *Only for the admin user*
+
+- Use this to add your different contact information like `phone number`, `twitter profile`, `LinkedIn`, and so on.
+
+**Full features on development**
+
+##### Education
+
+- Use this to add your education info.
+
+**Full features on development**
+
+#### Professional
+##### Articles
+
+- Use this section to post the links to your articles.
+
+**Full features on development**
+
+##### Projects
+
+- Use this to create a post explaining your projects. You can include screenshots, links, instructions, and similar.
+**Full features on development** 
 
 ### Run tests
 
