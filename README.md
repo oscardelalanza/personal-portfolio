@@ -57,10 +57,11 @@ To clone the project into your local environment do the following.
 
 ### Install
 
-To install the requires packages do the following
+To install the required packages do the following.
 
-- inside `personal-portfolio` directory run the command `bundle install --without-production`
-- inside `personal-portfolio` directory run the command `yarn install`
+- Run the command `bundle install --without-production` to install the required gems.
+- Run the command `yarn install` to install the required node modules.
+- Run the command `rails db:migrate` to install de database.
 
 ### Usage
 
