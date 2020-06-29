@@ -67,7 +67,7 @@ To install the required packages do the following.
 
 ### Run tests
 
-no tests written yet
+- Run the command `rails tests`. 
 
 ### Deployment
 
