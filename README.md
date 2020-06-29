@@ -40,20 +40,20 @@ Technologies
 
 ### Prerequisites
 
-- ruby
-- rails
-- git
-- postgreSQL
-- Yarn
-- AWS account
+- `Ruby 2.7.0`
+- `Rails 6`
+- `Git`
+- `PostgreSQL`
+- `Yarn`
+- `AWS account`
 
 ### Setup
 
-To clone the project into your local environment do the following
+To clone the project into your local environment do the following.
 
-- open a new `terminal` window and navigate to the directory where the project will be stored
-- run the command `git clone git@github.com:oscardelalanza/personal-portfolio.git`
-run the command cd `personal-portfolio` to enter to the project directory
+- Open a new `terminal` window and navigate to the directory where the project will be stored.
+- Run the command `git clone git@github.com:oscardelalanza/personal-portfolio.git`.
+- Run the command cd `personal-portfolio` to enter the project directory.
 
 ### Install
 
