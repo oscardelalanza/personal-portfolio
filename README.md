@@ -28,7 +28,7 @@ Technologies
 
 ## Live Demo
 
-[Live Demo Link](https://oscardelalanza.com)
+[Live Demo Link](https://oscardelalanza-portfolio.herokuapp.com)
 
 ## Getting Started
 
