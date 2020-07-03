@@ -1,6 +1,6 @@
 # Personal Portfolio [*On Development*]
 
-> Personal portfolio project is a web application intended for post and show my work, projects, articles and other
+> Personal portfolio project is a web application intended to post and show my work, projects, articles and other
 > interesting stuff in one place. 
 
 ![screenshot](docs/screenshots/dashboard.png)
@@ -68,7 +68,7 @@ To install the required packages do the following.
 #### Home
 ##### Dashboard *Only for the admin user*
 
-This section only contain `one` admin user. Get access to the dashboard following the path `/dashboard`.
+This section only contains `one` admin user. Get access to the dashboard following the path `/dashboard`.
 
 In the right side of the dashboard, you will find the navigation links that will redirect you to the different features of the project.
 
