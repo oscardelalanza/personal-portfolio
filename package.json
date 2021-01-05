@@ -1,22 +1,15 @@
 {
-  "name": "Portfolio",
+  "name": "personal-portfolio",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.0",
     "@rails/actioncable": "^6.0.0",
-    "@rails/actiontext": "^6.0.2-2",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "4.2.2",
-    "bootstrap": "^4.4.1",
-    "jquery": "^3.5.0",
-    "popper.js": "^1.16.1",
-    "trix": "^1.0.0",
-    "turbolinks": "^5.2.0",
-    "webpack": "^4.42.1"
+    "@rails/webpacker": "5.2.1",
+    "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
   "devDependencies": {
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.1"
   }
 }

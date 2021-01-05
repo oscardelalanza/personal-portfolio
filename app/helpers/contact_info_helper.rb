@@ -1,2 +1,0 @@
-module ContactInfoHelper
-end

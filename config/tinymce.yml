@@ -1,8 +1,0 @@
-menubar: false
-toolbar:
-  - styleselect | bold italic | undo redo | image uploadimage link code
-plugins:
-  - image
-  - link
-  - code
-  - uploadimage
