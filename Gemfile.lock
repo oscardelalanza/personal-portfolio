@@ -150,7 +150,7 @@ GEM
     net-http-persistent (4.0.0)
       connection_pool (~> 2.2)
     net_http_timeout_errors (0.3.5)
-    nio4r (2.5.2)
+    nio4r (2.5.8)
     nokogiri (1.11.0)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
@@ -160,7 +160,7 @@ GEM
     orm_adapter (0.5.0)
     pg (1.2.3)
     public_suffix (4.0.5)
-    puma (4.3.5)
+    puma (4.3.11)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
@@ -284,7 +284,7 @@ DEPENDENCIES
   link_thumbnailer
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
-  puma (~> 4.1)
+  puma (~> 4.3)
   rails (~> 6.0.2, >= 6.0.2.2)
   sass-rails (>= 6)
   selenium-webdriver
